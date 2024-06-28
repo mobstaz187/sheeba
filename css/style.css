@@ -54,6 +54,7 @@ a {
   width: 100%;
   height: Auto;
   height: 100vh;
+  background-size:100% 100%;
 }
 
 .sectionbg {
@@ -63,8 +64,10 @@ a {
   margin: 0;
   max-width: none;
   background-image: url("../img/SheebaShiba.jpg");
-  background-size: 90% 100%;
+  background-size: 87% 100%;
+  background-repeat: no-repeat;
   height: 100vh;
+
   }
   section:nth-of-type(2n) {
     background-color: #FE4B74;
@@ -393,13 +396,13 @@ img {
 
 .notflip-container:hover .notflipper,
 .notflip-container.hover .notflipper {
-  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .notflip-container,
 .notfront,
 .notback,img[src^="img/CoinLogo.PNG"],img[src^="img/gold.PNG"] {
-  width: 300px;
+  width: 35vh;
   height: auto;
   z-index: 10;
 }
