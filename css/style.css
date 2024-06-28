@@ -401,7 +401,13 @@ img {
 
 .notflip-container,
 .notfront,
-.notback,img[src^="img/CoinLogo.PNG"],img[src^="img/gold.PNG"],img[src^="img/1B.png"],img[src^="img/LP.png"],img[src^="img/TAX.png"] {
+.notback,img[src^="img/CoinLogo.PNG"] {
+  width: 35vh;
+  height: 35vh;
+  margin-bottom:-23%;
+  z-index: 10;
+}
+img[src^="img/gold.PNG"],img[src^="img/1B.png"],img[src^="img/LP.png"],img[src^="img/TAX.png"]{
   width: 35vh;
   height: 35vh;
   margin-bottom:-23%;
