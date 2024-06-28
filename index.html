@@ -125,7 +125,7 @@
             <Input type="image" style="float: left;"  id="show" class="img_girlShib" src="img/GirlShibaTP.png"/>
         </div>
         <div>
-            <form action="https://google.com"><input type="image" style="float: right;"  id="wrapper"class="img_two" src="img/Tokenomics.PNG" onmouseover="this.src='img/TokenomicsGold.PNG';" onmouseout="this.src='img/Tokenomics.PNG';"/></form>
+           <input type="image" style="float: right;"  id="PopUpTokenomics" class="img_two" src="img/Tokenomics.PNG" onmouseover="this.src='img/TokenomicsGold.PNG';" onmouseout="this.src='img/Tokenomics.PNG';"/>
         </div>
         <div>
             <input type="image" style="float: right;"  id="PopUpMemes" class="img_two" src="img/Memes.PNG" onmouseover="this.src='img/MemeGold.PNG';" onmouseout="this.src='img/Memes.PNG';"/>
@@ -184,6 +184,68 @@
             </div>
         </div>
 
+        <div id="myTokenomicsPopup" class="memespopup">
+            <img src="img/Title.png" style="float: left;margin-top:-1.5%;" class="img_3">
+            <div class="memespopup-content">
+                
+                <div class="row" style="padding-bottom: 15%;margin-top: 0%;">
+
+                    <div class="column">
+                        <div class="notflip-container" >
+                            <div class="notflipper" >
+                                    <div class="notfront">
+                                        <img  id="pop1" src="img/gold.PNG"/>  
+                                    </div>
+                            
+                                    <div class="notback">   
+                                        <img   id="pop1" src="img/1b.png"/>       
+                                    </div>
+                            </div>
+                        </div>  
+                    </div>
+
+                    <div class="column">
+                        <div class="notflip-container" >
+                            <div class="notflipper" >
+                                    <div class="notfront">
+                                        <img  id="pop1" src="img/gold.PNG"/>  
+                                    </div>
+                            
+                                    <div class="notback">   
+                                        <img   id="pop1" src="img/LP.png"/>       
+                                    </div>
+                            </div>
+                        </div>  
+                    </div>
+
+                    <div class="column">
+                        <div class="notflip-container" >
+                            <div class="notflipper" >
+                                    <div class="notfront">
+                                        <img  id="pop1" src="img/gold.PNG"/>  
+                                    </div>
+                            
+                                    <div class="notback">   
+                                        <img   id="pop1" src="img/TAX.png"/>       
+                                    </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <!--<h1 style="color: green">
+                    
+                </h1>
+                <image src="img/Sheemes.jpg" class="titlememes"></image>-->
+                <!--<p>This is a popup box!</p>-->
+                <button id="closeTokenomicsPopup">
+
+                </button>
+                <footer class="footer">
+                    <img src="./img/footmeme.png" class="footerimg">
+                </footer>
+            </div>
+        </div>
+
 
         <div class="divloc">
             <div class="notflip-container" >
@@ -197,7 +259,7 @@
                         </div>
                 </div>
             </div>  
-            <div >
+        <div >
                 <form action="https://pump.fun"><input id="pop1" type="image" style="margin-left:40%;margin-top:20%;bottom: 10%;" class="img_two" src="img/BuyMe.png" onmouseover="this.src='img/BuyMeGold.PNG';" onmouseout="this.src='img/BuyMe.png';"width="10" height="10"/></form>
              </div>
         </div>
@@ -233,7 +295,7 @@
                     mynotPopup.classList.add("show");
                 }
             );
-            closeaboutPopup.addEventListener(
+            closeTokenomicsPopup.addEventListener(
                 "click",
                 function () {
                     mynotPopup.classList.remove(
@@ -246,6 +308,31 @@
                 function (event) {
                     if (event.target == mynotPopup) {
                         mynotPopup.classList.remove(
+                            "show"
+                        );
+                    }
+                }
+            );
+
+            PopUpTokenomics.addEventListener(
+                "click",
+                function () {
+                    myTokenomicsPopup.classList.add("show");
+                }
+            );
+            closeaboutPopup.addEventListener(
+                "click",
+                function () {
+                    myTokenomicsPopup.classList.remove(
+                        "show"
+                    );
+                }
+            );
+            window.addEventListener(
+                "click",
+                function (event) {  
+                    if (event.target == myTokenomicsPopup) {
+                        myTokenomicsPopup.classList.remove(
                             "show"
                         );
                     }

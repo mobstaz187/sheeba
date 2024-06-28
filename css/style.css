@@ -401,7 +401,7 @@ img {
 
 .notflip-container,
 .notfront,
-.notback,img[src^="img/CoinLogo.PNG"],img[src^="img/gold.PNG"] {
+.notback,img[src^="img/CoinLogo.PNG"],img[src^="img/gold.PNG"],img[src^="img/1b.png"],img[src^="img/LP.png"],img[src^="img/TAX.png"] {
   width: 35vh;
   height: 35vh;
   margin-bottom:-23%;
