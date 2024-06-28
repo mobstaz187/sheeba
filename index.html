@@ -20,7 +20,7 @@
             <div>
                     <div class="durian">
                         <div class="coinicon-i">
-                            <img class="durianImage" src="img/Title.png"  onmouseover="this.src='./img/SheebaGold.PNG'" onmouseout="this.src='./img/Title.png'" alt="Durian picture">
+                            <img  class="durianImage" src="img/Title.png" id="pop" onmouseover="this.src='./img/SheebaGold.PNG'" onmouseout="this.src='./img/Title.png'" alt="Durian picture">
                         </div>
                     </div>
              </div>
@@ -111,6 +111,7 @@
     </style>
 
     <section class="anatomy" >
+        
         <h1 class="title"></h1>
         <div>
             <Input type="image" style="float: left;"  id="show" class="img_girlShib" src="img/GirlShibaTP.png"/>
@@ -132,10 +133,10 @@
             <div class="memespopup-content">
                 
                 <div class="row">
-                    <div class="column"><image src="img/Meme1.PNG" class="meme1" style="width:100%"></image></div>
-                    <div class="column"><image src="img/Meme2.PNG" class="meme1" style="width:100%"></image></div>
-                    <div class="column"><image src="img/Jealous.gif" class="meme1" style="width:100%"></image></div>
-                    <div class="column"><image src="img/Meme4.PNG" class="meme1" style="width:100%"></image></div>
+                    <div class="column"><image id="pop1" src="img/Meme1.PNG" class="meme1" style="width:100%"></image></div>
+                    <div class="column"><image id="pop1" src="img/Meme2.PNG" class="meme1" style="width:100%"></image></div>
+                    <div class="column"><image id="pop1" src="img/Jealous.gif" class="meme1" style="width:100%"></image></div>
+                    <div class="column"><image id="pop1" src="img/Meme4.PNG" class="meme1" style="width:100%"></image></div>
                 </div>
                 <!--<h1 style="color: green">
                     
@@ -156,7 +157,7 @@
             <div class="memespopup-content">
                 <div class="column"><image src="img/TheSheenu.jpg" class="meme1" style="width:30vh;margin-left:17.5%;margin-bottom:-3.5% ;"></image></div>
                 <div class="row">
-                    <image src="img/Jealous.gif" class="meme1" style="width:40%;margin-bottom:5% ;"></image>
+                    <image id="pop1" src="img/Jealous.gif" class="meme1" style="width:40%;margin-bottom:5% ;"></image>
                     
                     <p style="margin:30px; text-align: justify; padding-top:1%;"><font style="color: #ED7674; font-size: 27px; font-family: DynaPuff;">Presenting Sheeba Inu, Shiba Inu's long-lost lover. A love story centered around memes, and a part of history ready to unfold. Our community is dedicated to developing a positive and enjoyable community with the goal of creating major partnerships across the space.</font></p>
                 </div>
@@ -177,18 +178,18 @@
 
         <div class="divloc">
             <div class="notflip-container" >
-                <div class="notflipper">
+                <div class="notflipper" >
                         <div class="notfront">
-                            <img  src="img/gold.PNG"/>  
+                            <img  id="pop1" src="img/gold.PNG"/>  
                         </div>
                 
                         <div class="notback">   
-                            <img   src="img/CoinLogo.PNG"/>       
+                            <img   id="pop1" src="img/CoinLogo.PNG"/>       
                         </div>
                 </div>
             </div>  
             <div >
-                <form action="https://pump.fun"><input type="image" style="margin-left:40%;margin-top:20%;bottom: 10%;" class="img_two" src="img/BuyMe.png" onmouseover="this.src='img/BuyMeGold.PNG';" onmouseout="this.src='img/BuyMe.png';"width="10" height="10"/></form>
+                <form action="https://pump.fun"><input id="pop1" type="image" style="margin-left:40%;margin-top:20%;bottom: 10%;" class="img_two" src="img/BuyMe.png" onmouseover="this.src='img/BuyMeGold.png';" onmouseout="this.src='img/BuyMe.png';"width="10" height="10"/></form>
              </div>
         </div>
         <script>
@@ -241,6 +242,13 @@
                     }
                 }
             );
+
+            function copyText() {
+
+            /* Copy text into clipboard */
+            navigator.clipboard.writeText
+                ("TESTCA");
+            }
         </script>
 
             
@@ -252,67 +260,15 @@
                     Reduces cancer risk. Its antioxidants may neutralize cancer-promoting free radicals. In one test-tube study, durian extract prevented a strain of breast cancer cells from spreading.
                     Prevents heart disease. Fights infection. The rind contains compounds that have antibacterial and anti-yeast properties. Durian has a lower glycemic index (GI) than many other tropical fruits, meaning it may spike blood sugar levels less.</p>
             </div> -->
+               
         </div>
+        <footer class="secondfooter">
+            <p><font style="color: #ffffff; font-size: 20px; font-family: DynaPuff;">CA: TestCA</font></p>
+            <input type="image" id="cleck" src="./img/COPYCA.png" class="footerimg" onclick="copyText()">
+            
+        </footer>
     </section>
-
-    <section class="durian-variety">
-        <h1 class="title"></h1>
-
-        <!--<div class="sort" id="sort1">
-            <div class="durian-image" id="durian-image1">
-                <img  class="durian-image1" src="img/arancillo.JPG" alt="arancillo durian">
-            </div>
-            <div class="desc" id="desc1">
-                <h3>Arancillo</h3>
-                <p> Arancillo combines the strong flavor and bitternesss of the native with slightly thicker flesh and a smooth, silky texture. It is apparently a seedling of the Thai Chanee, discovered by former BPI-PhilFruits director Vicente Arancillo. While it is one of the preferred durians by taste, Arancillo has a tendency to rot in heavy rain and is not a recommended variety for export.</p>        
-                <h1 class="name-style">ARANCILLO</h1>
-            </div>
-        </div>
-        
-        <div class="sort" id="sort2">
-            <div class="durian-image" id="durian-image2">
-                <img src="img/duyaya.JPG" alt="duyaya durian">
-            </div>
-            <div class="desc" id="desc2">
-                <h3>Duyaya</h3>
-                <p>A bright yellow durian with a strange, elongated shape very like the Petruk durian from Java. It’s actually the seedling of a Monthong, and is reliably sweet. The name Duyaya is a combination of “Durian” and “Bisaya” – the ethnic tribe of Calinan farmer Severino Belviz. Edible portion: 32%.</p>
-                <h1 class="name-style">DUYAYA</h1>
-            </div>
-        </div>
-
-        <div class="sort" id="sort3">
-            <div class="durian-image" id="durian-image3">
-                <img src="img/puyat.JPG" alt="puyat durian">
-            </div>
-            <div class="desc" id="desc3">
-                <h3>Puyat</h3>
-                <p>Puyat has a beautiful yellow-orange coloration and a very thick, bitter-sweet flesh. It is one of the largest durians, recognizable by its large brown spikes, pear shape, and thick stem. Like Arancillo, it is a seedling of a Chanee, brought to the Philippines in the 1970’s by a Mr. Puyat. When the Singapore Fruits and Vegetable Association visited Davao this year, out of twelve selected varieties Puyat was their favorite. Since the tree is also resistant to phytophtera and other types of fungus, it is currently the favored variety among farmers. Edible portion: 40%.</p>
-                <h1 class="name-style">PUYAT</h1>
-            </div>
-        </div>
-
-        <div class="sort" id="sort4">
-            <div class="durian-image" id="durian-image4">
-                <img src="img/kob.JPG" alt="kob or D99 durian">
-            </div>
-            <div class="desc" id="desc4">
-                <h3>Kob or D99</h3>
-                <p>Registered as D99 in Malaysia, Kob is originally from Thailand. In the Philippines, it’s one of the most popular durian varieties. It comes in two colors depending on the altitude, yellow or white, and is reliably chocolate-sweet with a thick flesh.  It is one of the durians considered for export.</p>
-                <h1 class="name-style">KOB / D99</h1>
-            </div>
-        </div>
-
-        <div class="sort" id="sort5">
-            <div class="durian-image" id="durian-image5">
-                <img src="img/d101.JPG" alt="d101 durian">
-            </div>
-            <div class="desc" id="desc5">
-                <h3>D101</h3>
-                <p>Malaysian durian varieties, such as D101, are just beginning to filter into the Philippines. While rare, D101 is the most popular because of its thick, buttery flesh and frosting-like sweetness.</p>
-                <h1 class="name-style">D101</h1>
-            </div>
-        </div>-->
-    </section>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
