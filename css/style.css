@@ -403,7 +403,8 @@ img {
 .notfront,
 .notback,img[src^="img/CoinLogo.PNG"],img[src^="img/gold.PNG"] {
   width: 35vh;
-  height: auto;
+  height: 35vh;
+  margin-bottom:-23%;
   z-index: 10;
 }
 /* notflip speed */
