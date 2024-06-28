@@ -419,3 +419,74 @@ img {
 .notback {
   -webkit-transform: rotateY(180deg);
 }
+
+.meme1 {
+  padding: 0px;
+  width: 23%;
+  height:auto;
+  border-radius: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform .2s;
+}
+.meme1:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+.meme2 {
+  display: flex;
+  padding: 5px;
+  width: 23%;
+  height:auto;
+  border-radius: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.titlememes {
+  display: block;margin: auto;
+  padding: 50px;
+  width: 50%;
+  height:auto;
+  border-radius: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.meme4 {
+  display: flex;
+  padding: 5px;
+  width: 23%;
+  height:auto;
+  border-radius: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.column {
+  flex: 33.33%;
+  padding: 0px;
+}
+.row {
+  display: flex;
+}
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.footerimg {
+  padding: 0px;
+  width: 100%;
+  height:auto;
+  border-radius: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform .2s;
+}
+
