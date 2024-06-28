@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DynaPuff">
     <title>SheebaInu</title>
 </head>
 <body>
@@ -76,7 +77,7 @@
         }       
         .memespopup {
                 position: fixed;
-                z-index: 1;
+                z-index: 5;
                 left: 0;
                 top: 0;
                 width: 100%;
@@ -121,7 +122,7 @@
             <input type="image" style="float: right;"  id="PopUpMemes" class="img_two" src="img/Memes.PNG" onmouseover="this.src='img/MemeGold.PNG';" onmouseout="this.src='img/Memes.PNG';"/>
         </div>
         <div>
-            <input type="image" style="float: right;"  id="wrapper"class="img_two" src="img/AboutSheeba.PNG" onmouseover="this.src='img/AboutSheebaGold.PNG';" onmouseout="this.src='img/AboutSheeba.PNG';"/>
+            <input type="image" style="float: right;"  id="PopUpabout" class="img_two" src="img/AboutSheeba.PNG" onmouseover="this.src='img/AboutSheebaGold.PNG';" onmouseout="this.src='img/AboutSheeba.PNG';"/>
         </div>
 
 
@@ -133,7 +134,7 @@
                 <div class="row">
                     <div class="column"><image src="img/Meme1.PNG" class="meme1" style="width:100%"></image></div>
                     <div class="column"><image src="img/Meme2.PNG" class="meme1" style="width:100%"></image></div>
-                    <div class="column"><image src="img/Meme3.PNG" class="meme1" style="width:100%"></image></div>
+                    <div class="column"><image src="img/Jealous.gif" class="meme1" style="width:100%"></image></div>
                     <div class="column"><image src="img/Meme4.PNG" class="meme1" style="width:100%"></image></div>
                 </div>
                 <!--<h1 style="color: green">
@@ -150,6 +151,28 @@
             </div>
         </div>
 
+        <div id="mynotPopup" class="memespopup">
+            <img src="img/Title.png" style="float: left;margin-top:1.5%;" class="img_3">
+            <div class="memespopup-content">
+                <div class="column"><image src="img/TheSheenu.jpg" class="meme1" style="width:30vh;margin-left:17.5%;margin-bottom:-3.5% ;"></image></div>
+                <div class="row">
+                    <image src="img/Jealous.gif" class="meme1" style="width:40%;margin-bottom:5% ;"></image>
+                    
+                    <p style="margin:30px; text-align: justify; padding-top:1%;"><font style="color: #ED7674; font-size: 27px; font-family: DynaPuff;">Presenting Sheeba Inu, Shiba Inu's long-lost lover. A love story centered around memes, and a part of history ready to unfold. Our community is dedicated to developing a positive and enjoyable community with the goal of creating major partnerships across the space.</font></p>
+                </div>
+                <!--<h1 style="color: green">
+                    
+                </h1>
+                <image src="img/Sheemes.jpg" class="titlememes"></image>-->
+                <!--<p>This is a popup box!</p>-->
+                <button id="closeaboutPopup">
+
+                </button>
+                <footer class="footer">
+                    <img src="./img/footmeme.png" class="footerimg">
+                </footer>
+            </div>
+        </div>
 
 
         <div class="divloc">
@@ -165,7 +188,7 @@
                 </div>
             </div>  
             <div >
-                <form action="https://pump.fun"><input type="image" style="margin-left:40%;margin-top:20%;bottom: 10%;" class="img_two" src="img/BuyMe.png" onmouseover="this.src='img/BuyMeGold.PNG';" onmouseout="this.src='img/BuyMe.png';"width="10" height="10"/></form>
+                <form action="https://pump.fun"><input type="image" style="margin-left:40%;margin-top:20%;bottom: 10%;" class="img_two" src="img/BuyMe.png" onmouseover="this.src='img/BuyMeGold.png';" onmouseout="this.src='img/BuyMe.png';"width="10" height="10"/></form>
              </div>
         </div>
         <script>
@@ -193,6 +216,31 @@
                     }
                 }
             );
+
+            PopUpabout.addEventListener(
+                "click",
+                function () {
+                    mynotPopup.classList.add("show");
+                }
+            );
+            closeaboutPopup.addEventListener(
+                "click",
+                function () {
+                    mynotPopup.classList.remove(
+                        "show"
+                    );
+                }
+            );
+            window.addEventListener(
+                "click",
+                function (event) {
+                    if (event.target == mynotPopup) {
+                        mynotPopup.classList.remove(
+                            "show"
+                        );
+                    }
+                }
+            );
         </script>
 
             
@@ -209,6 +257,7 @@
 
     <section class="durian-variety">
         <h1 class="title"></h1>
+
         <!--<div class="sort" id="sort1">
             <div class="durian-image" id="durian-image1">
                 <img  class="durian-image1" src="img/arancillo.JPG" alt="arancillo durian">
