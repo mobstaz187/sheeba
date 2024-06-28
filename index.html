@@ -12,7 +12,9 @@
     <title>SheebaInu</title>
 </head>
 <body>
+    
     <section class="sectionbg">
+        <audio id="my-audio" src="sheeba.mp3"></audio>
         <div class="king">
             <hr>
             <p></p> 
@@ -20,7 +22,7 @@
             <div>
                     <div class="durian">
                         <div class="coinicon-i">
-                            <img  class="durianImage" src="img/Title.png" id="pop" onmouseover="this.src='./img/SheebaGold.PNG'" onmouseout="this.src='./img/Title.png'" alt="Durian picture">
+                            <img  class="durianImage" src="img/Title.png" id="pop" onmouseover="this.src='./img/SheebaGoldmusic.png'" onmouseout="this.src='./img/Titlemusic.png'" alt="Durian picture">
                         </div>
                     </div>
              </div>
@@ -248,6 +250,20 @@
             /* Copy text into clipboard */
             navigator.clipboard.writeText
                 ("TESTCA");
+            }
+
+            var isAudioPlayed = false;
+            function playAudio() {
+
+                isAudioPlayed = true;
+                const myAudio = document.getElementById("my-audio");
+                myAudio.play();
+            }
+
+
+            document.body.onclick = ()=>{
+                if(isAudioPlayed) return ;
+                playAudio();
             }
         </script>
 
