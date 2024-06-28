@@ -5,12 +5,7 @@
           box-sizing: border-box;
 }
 
-body {
-  background: #f4f4f4;
-  font-family: 'Poppins', sans-serif;
-  scroll-behavior: smooth;
-  overflow-x: hidden; /* Hide vertical scrollbar */
-}
+
 
 img {
   width: 100%;
@@ -86,7 +81,7 @@ a {
   right: 50px;
   max-width: 100px;
   height: auto;
-  z-index: 10;
+  z-index: 3;
 }
 
 .showcase ul li {
@@ -108,21 +103,21 @@ a {
   display: inline-block;
   width: 100vw;
   height: auto;
-  z-index: 10;
+  z-index: 3;
 }
 .notdurian {
   position: inline;
   display: inline-block;
   width: 100vw;
   height: auto;
-  z-index: 10;
+  z-index: 3;
 }
 .dog {
   position: inline;
   display: inline-block;
   width: 100vw;
   height: auto;
-  z-index: 10;
+  z-index: 3;
 }
 .dog div {
   position: absolute;
@@ -146,7 +141,7 @@ a {
   display: inline-block;
   width: 100vw;
   height: auto;
-  z-index: 10;
+  z-index: 3;
 }
 
 .coinicon div {
