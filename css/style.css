@@ -407,6 +407,7 @@ img {
   margin-bottom:-23%;
   z-index: 10;
 }
+
 img[src^="img/gold.PNG"],img[src^="img/1B.png"],img[src^="img/LP.png"],img[src^="img/TAX.png"]{
   width: 35vh;
   height: 35vh;
